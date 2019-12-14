@@ -1,0 +1,42 @@
+class node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.start = None
+    
+    def viewList(self):
+        if self.start== None:
+            print("Empty")
+        else:
+            temp = self.start
+            while temp!=None:
+                print(temp.data,end=' ')
+                temp = temp.next
+
+    def delete(self):
+        if self.start == None:
+            print("Empty")
+        else:
+            self.start = self.start.next
+    
+    def insert(self,value):
+        newNode = node(value)
+        if self.start == None:
+            self.start = newNode
+        else:
+            temp = self.start
+            while temp.next!= None:
+                temp = temp.next
+            temp.next = newNode
+
+my = LinkedList()
+my.insert(10)
+my.insert(20)
+my.insert(30)
+my.viewList()
+print()
+my.delete()
+my.viewList()
