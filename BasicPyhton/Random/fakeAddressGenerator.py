@@ -10,4 +10,4 @@ full_name = fname + ' ' + lname
 city_name = random.choice(city)
 email = fname.lower() + lname.lower()+'@gmail.com'
 phone_num = '01'+str(random.choice([3,4,5,6,7,8,9]))+str(random.randint(10000000,99999999))
-print("Name: "+full_name+'\n'+"City: "+city_name+'\n'+"Email: "+email+'\n'+"Phone-no: "+phone_num)
+print("Name: {}\nCity: {}\nEmail: {}\nPhone-no: {}".format(full_name,city_name,email,phone_num))
