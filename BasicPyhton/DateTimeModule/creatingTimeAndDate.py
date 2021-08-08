@@ -6,8 +6,14 @@ import datetime
 tm = datetime.time(20,12,12,12)
 print(tm)
 # print(tm.second)
-tday = datetime.date(2021,1,3)
-print(tday)
+cday = datetime.date(2021,1,3)
+print(cday)
 # print(tday.day)
-print(tday.weekday())'''weekday() Monday 1 Sunday 6'''
-print(tday.isoweekday())'''isoweekday() Monday 0 Sunday 1'''
+'''weekday() Monday 1 Sunday 6'''
+print(cday.weekday())
+'''isoweekday() Monday 0 Sunday 1'''
+print(cday.isoweekday())
+
+# tday = datetime.datetime.today()
+tday = datetime.date.today()
+print(tday)
